@@ -14,8 +14,8 @@ const { handleApiRoutes } = require('./routes/api');
 
 // ─── Configuration ──────────────────────────────────────────────────────────
 const CONFIG = {
-  port:      3000,
-  host:      'localhost',
+  port:      process.env.PORT || 3000,
+  host:      '0.0.0.0',
   publicDir: path.join(__dirname, 'public'),
 };
 
